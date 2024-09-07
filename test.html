@@ -1,0 +1,42 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="test.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mood Tracker</h1>
+
+      <form id="moodForm">
+        <label for="mood">How are you feeling today?</label>
+        <select id="mood" required>
+          <option value="" disabled selected>Select your mood</option>
+          <option value="Happy">Happy</option>
+          <option value="Sad">Sad</option>
+          <option value="Angry">Angry</option>
+          <option value="Excited">Excited</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Anxiety">Anxiety</option>
+          <!-- Added Anxiety -->
+        </select>
+        <button type="submit">Submit Mood</button>
+      </form>
+
+      <h2>Mood History</h2>
+      <ul id="moodHistory"></ul>
+      <!-- Mood history will be displayed here -->
+
+      <h2>Mood Chart</h2>
+      <canvas id="moodChart" width="400" height="200"></canvas>
+      <!-- Bar chart -->
+    </div>
+
+    <script src="test.js"></script>
+  </body>
+</html>

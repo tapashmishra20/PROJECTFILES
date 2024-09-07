@@ -1,0 +1,124 @@
+/** @format */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    to right,
+    #ffecd2,
+    #fcb69f
+  ); /* Gradient background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff6347; /* Tomato color */
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #ff6347;
+  background-color: #fce4ec; /* Light pink background */
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  border-color: #ff7f50; /* Coral color */
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7f50; /* Coral */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  margin: 8px 0;
+  border-radius: 8px;
+  border-left: 5px solid #ff6347;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #ffefd5; /* Light papaya color */
+}
+
+h2 {
+  color: #4caf50; /* Green */
+  margin-top: 20px;
+}
+
+canvas {
+  margin-top: 30px;
+  background-color: #fff5ee; /* Seashell */
+  border: 2px solid #ff6347;
+  border-radius: 8px;
+}
+
+/* Styling for the emoji and solution text in mood history */
+li strong {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #ff6347; /* Tomato */
+}
+
+li::before {
+  content: "✨"; /* Sparkle emoji before each mood entry */
+  margin-right: 8px;
+}
+
+li img {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  border-radius: 8px;
+  vertical-align: middle;
+}
